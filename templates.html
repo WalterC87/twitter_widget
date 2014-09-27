@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.container{
+				border 1px solid black;
+				width: 275px;
+				height: 400px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container"></div>
+		<script src="http://twitterapp.dev/widget_twitter.js"></script>
+		<script>
+			Tweet().init({
+				screen_name: 'WalterC_87',
+				display_count: 10,
+				display_result: '.container'
+			});
+		</script>
+	</body>
+</html>

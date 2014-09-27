@@ -1,0 +1,18 @@
+step 1: Create a virtual host 
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "application path"
+    ServerName twitterApp.dev
+	
+	<Directory "application path">
+		Order allow,deny
+        Allow from All
+	</Directory>
+</VirtualHost>
+
+step 2: Create the host
+
+127.0.0.1 twitterApp.dev
+
+step 3: copy all files into your folder App.

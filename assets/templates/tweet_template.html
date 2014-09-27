@@ -1,0 +1,31 @@
+<article class="tweet">
+	<div class="tweet-left">
+		<figure class="tweet-image-profile">
+			<a href="https://twitter.com/{{screen_name}}">
+				<img src='{{image_profile}}' alt='{{screen_name}}' title='{{screen_name}}'>
+			</a>
+		</figure>
+		<div class="tweet-username">
+			<a class="tweet-anchor-username" href="https://twitter.com/{{screen_name}}" target="_blank">
+				{{screen_name}}
+			</a>
+			<p class="tweet-name">{{display_name}}</p>
+		</div>
+	</div>
+
+	<div class="tweet-right">
+		<div class="tweet-row">
+			<div class="tweet_text">{{display_text}}</div>
+		</div>
+		<div class="tweet-row">
+			<div class="tweet-timestamp">
+				<img class="stream_bluebird" src="/img/Twitter_20_blue.fw.png">
+				<a href="http://twitter.com/{{screen_name}}/status/{{tweet_id}}" target="search" class="tweet_time_link">{{timestamp}}</a>
+				
+				<a href="https://twitter.com/{{screen_name}}" class="twitter-follow-button" data-show-count="false">
+				Follow {{screen_name}}
+			</a>
+			</div>
+		</div>
+	</div>
+</article>
