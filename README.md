@@ -27,7 +27,10 @@ How to use
   **display_count** represents the number of tweets to display.
   **display_result** represents the div that you should have created in the second step, this "container" will be identified with a css class.
 
-5. templates.html it's an example that how to use and implement this widget
+5. templates.html it's an example that how to use and implement this widget.
+6. 
+6. This widget twitter works with php 5.5.2 or higher.
+
 
 Test and enjoys working, with this widget and let me know your opinion.
 
