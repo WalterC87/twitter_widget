@@ -54,6 +54,14 @@ How to use in your web page
 
 4. [Example](http://waltercordero.com/templates.html) it's an example that how to use and implement this widget in your web page.
 
+Send parameter in URL
+=====================
+
+If you wanna send parameter in the url, you must write some like this: http://waltercordero.com/templates.html?screen_name=treehouse&display_count=5.
+
+Where **screen_name** represents the username twitter account you want display and **display_count** is the number of tweets.
+
+whit 
 
 Test and enjoys working, with this widget and let me know your opinion.
 
