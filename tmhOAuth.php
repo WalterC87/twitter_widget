@@ -60,7 +60,7 @@ class tmhOAuth {
         // for security this should always be set to 2.
         'curl_ssl_verifyhost'        => 2,
         // for security this should always be set to true.
-        'curl_ssl_verifypeer'        => true,
+        'curl_ssl_verifypeer'        => false,
         // for security this should always be set to true.
         'use_ssl'                    => true,
 

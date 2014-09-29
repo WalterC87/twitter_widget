@@ -32,7 +32,7 @@ if($response_code == 200){
 	$tweet_data = json_decode($connection->response['response'], true);
 	
 	//load the template
-	$tweet_template = file_get_contents('assets/templates/tweet_template.html');
+	$tweet_template = file_get_contents('assets/templates/tweet_template.html',true);
 
 	$tweet_list = array();
 	
@@ -63,13 +63,16 @@ if($response_code == 200){
 		$tweet_html = str_replace('{{display_text}}', linkify($tweet['text']),$tweet_html);
 		
 		array_push($tweet_list, $tweet_html);
+		
 		//$tweet_stream .= $tweet['text'] . '<br/><br/>';	
 	}
+		//print_r (json_encode($tweet_list));
 	
 	$my_array = array("Tweets"=> $tweet_list);
 
-	echo json_encode($my_array, JSON_UNESCAPED_SLASHES);
+	print (json_encode($my_array));
 }else{
+	
 	if($response_code == 429){
 		echo "Error: Twitter API rate limit reached";
 	}else{

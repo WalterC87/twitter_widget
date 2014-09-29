@@ -1,8 +1,8 @@
 <?php
 
-$consumer_key = 'HN51ooDMQVpFnoI3ue6EfTfkF';
-$consumer_secret = 'r0SmMcV6BaGV72kZn2RyT2M82xAjrlonnlSa5o7H4Vkf7BGs6P';
-$user_token= '52103444-7jJfdTvci9wj4rm3WldXz5TsNFg4n4Xvem0ZPmuKX';
-$user_secret= 'EApZQ4eTIGN4oi3gFyNQZEU0LAmaeXx6LCSxgtg7wymJe';
+$consumer_key = 'DwSo1i8Tx3lE9zEgptLHv0TL8';
+$consumer_secret = 'gnIMZtvE8dPC1WlWmMhB5pCkKKQi3d86yP30sxiMRIkZwYKHGD';
+$user_token= '52103444-l60pu8ylAxKIc9xE74HTYUt2DXAA7wJkzJEuxtMnx';
+$user_secret= 'VnMtEbEbux9gDQUPxu0qpH1aU7W570S3XHWzzoc45UVOr';
 
 ?>

@@ -100,6 +100,7 @@ Tweet.prototype.init = function(options){
 	
 	function showTweets(container,TweetsTemplate){
 		var width = 0;
+		var TweetsTemplateLocal = JSON.parse(TweetsTemplate);
 		width = $(container).width;
 		var loaderImg = '<div class="loading"><div class="spinner" style="width:200px; height:60px; margin-left:' + (width-200)/2+ 'px;"><p class="text-loading">Loading tweets</p><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>';
 		$(loaderImg).width(width);	
@@ -108,7 +109,7 @@ Tweet.prototype.init = function(options){
 		$(container).css('visibility','hidden');
 		
 		$.ajax({
-			url: 'http://twitterapp.dev/server.php?screen_name=' + params.screen_name + '&count=' + params.display_count,
+			url: '//waltercordero.com/server.php?screen_name=' + params.screen_name + '&count=' + params.display_count,
 			error: function(data){
 				$(container).html('Ajax request failed');
 			}
@@ -116,8 +117,8 @@ Tweet.prototype.init = function(options){
 		
 		.done(function (data){
 			var objData = JSON.parse(data);
-
-			$(TweetsTemplate).appendTo(container);
+			console.log(objData);
+			$(TweetsTemplateLocal).appendTo(container);
 			var lstn = $(container).children()[0];
 			var lst_cont = lstn.children[1];
 						
@@ -143,7 +144,7 @@ Tweet.prototype.init = function(options){
 	function App(){
 		$.ajax({
 			type: 'GET',
-			url: 'http://twitterapp.dev/server_template.php'
+			url: '//waltercordero.com/server_template.php',
 		})
 		
 		.error(function (err){
@@ -151,10 +152,10 @@ Tweet.prototype.init = function(options){
 		})
 		
 		.done(function (data){
-			var objTemplate = JSON.parse(data);
-			//console.log(objTemplate.TweetsTemplate);
+			var objTemplate = data;
+			//console.log(objTemplate);
 			$('.widget-container').remove();
-			showTweets(params.display_result, objTemplate.TweetsTemplate);
+			showTweets(params.display_result, objTemplate);
 		})
 		
 	}
@@ -188,6 +189,3 @@ Tweet.prototype.init = function(options){
 	},600000)();
 	
 };
-
-
-
