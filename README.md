@@ -5,8 +5,8 @@ twitter widget Teamtreehouse forum contest.
 
 This Widget was created with JavaScript and PHP using [tmhOAuth.php] (https://github.com/themattharris/tmhOAuth) to get the tweets.
 
-How to use
-==============
+How to use localhost
+====================
 
 1. Create a virtual host and a new host, this configuration is in explanation.txt
 
@@ -30,6 +30,29 @@ How to use
 5. templates.html it's an example that how to use and implement this widget.
 
 6. This widget twitter works with php 5.3 or higher.
+
+
+How to use in your web page
+===========================
+
+1. In the page where you wish use this widget, you must create one div, this will be the widget container, this container will be empty
+
+2. In the footer before close body tag you must use this script: <script src="http://waltercordero.com/widget_twitter.js"></script>. "http://waltercordero.com" represents my host, where is hosting all files.
+
+3. After put the script you must declare a object like this:
+      `<script>`
+      	`Tweet().init({`
+      		`screen_name: 'WalterC_87',`
+      		`display_count: 10,`
+      		`display_result: '.container'`
+      	`});`
+      `</script>`
+  
+  **screen_name** is your twitter user name.
+  **display_count** represents the number of tweets to display.
+  **display_result** represents the div that you should have created in the second step, this "container" will be identified with a css class. 
+
+4. [Example](http://waltercordero.com/templates.html) it's an example that how to use and implement this widget in your web page.
 
 
 Test and enjoys working, with this widget and let me know your opinion.
