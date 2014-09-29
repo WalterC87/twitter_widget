@@ -14,13 +14,13 @@ How to use
 
 3. In the footer before close body tag you must use this script: <script src="http://twitterapp.dev/widget_twitter.js"></script>. "http://twitterapp.dev" represents the virtual host in your localhost.
 
-4. After put the script you must declare a object like this:
-      `<script>`
-      	`Tweet().init({`
-      		`screen_name: 'WalterC_87',`
-      		`display_count: 10,`
-      		`display_result: '.container'`
-      	`});`
+4. After put the script you must declare a object like this: `<br>`
+      `<script><br>`
+      	`Tweet().init({<br>`
+      		`screen_name: 'WalterC_87',<br>`
+      		`display_count: 10,<br>`
+      		`display_result: '.container'<br>`
+      	`});<br>`
       `</script>`
   
   **screen_name** is your twitter user name.
